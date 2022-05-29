@@ -1,0 +1,318 @@
+body {
+    font-family: Nunito, sans-serif;
+    color: rgb(181, 132, 68);
+}
+
+h1, h2, h3  {
+    font-family: Asap, sans-serif;
+    color: 000000;
+}
+.botao {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 3px 6px;
+    background-color: chocolate;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/*navegação*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 204, 0, 0.915);
+}
+
+nav > a {
+    text-decoration: none;
+    color: #514949;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: Yellowtail, serif;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0%;
+    width: 100%;
+
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/*Cabeçalho*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+    font-style: oblique;
+    font-size: large;
+    text-align: center;
+    padding: 6px;
+}
+
+header h1 {
+    color: #ffffff;
+text-decoration: double;
+background-color: chocolate;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color:  rgb(135, 103, 49) ;
+    color: #FFFFFF;
+    padding: 280px;
+}
+
+#sobre h2 {
+    color: #FFFFFF;
+}
+
+#sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+#sobre .botao {
+    background-color: rgb(255, 255, 255);
+    color: #1c1c1c;
+    padding: 3px 6px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+#trabalhos div {
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    height: 5%;
+}
+
+
+/*fotos*/
+
+#favoritos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#favoritos h2 {
+    margin-bottom: 20px;
+}
+
+#favoritos img {
+    width: 100%;
+
+}
+
+
+/*contato*/
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+#contato h2 {
+    color: #000000;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+/*rodapé*/
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 35px;
+    background-color: #d1b94e;
+   color: #000000;
+
+}
+
+    footer a {
+        text-decoration: underline;
+        color: #0000008f;
+        background-color: #9d892f;
+        border-radius: 10%;
+    
+    }
+
+
+
+    @media screen and (min-width: 768px)  {
+
+        /*nav*/
+
+        nav {
+
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+       
+        nav ul {
+
+            flex-direction: row;
+            width: 70%;
+        }
+
+        /*cabeçalho*/
+
+        header {
+            height: 600px;
+            height: 60vh;
+            justify-content: center;
+        }
+
+        #sobre {
+
+            height: 250px;
+            height: 30vh;
+            justify-content: center;
+            min-height: 250px;
+        }
+
+        /*serviços*/
+
+        #trabalhos {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            max-width: 1000px;
+            max-height: 10%;
+            margin: 0 auto;
+
+
+
+        }
+
+        #trabalhos h2 {
+
+                    text-align: center;
+                    width: 100%;
+                   height: 5%;
+                }
+
+        #trabalhos div {
+
+            flex-grow: 1;
+            flex-basis: 150px;
+            padding: 0 10px
+        }
+
+        /*fotos*/
+
+        #favoritos {
+
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        #favoritos h2 {
+
+            width: 100%;
+            text-align: center;
+
+
+        }
+
+        #favoritos img {
+
+            width: 33.3333333%;
+            align-items: center;
+        }
+
+        /*contato*/
+
+        #contato {
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        #contato h2, #contato p {
+
+            width: 100%;
+        }
+
+
+
+    }
+
+    #poesias {
+
+        background-color: #d6b319;
+        padding: 90px;
+        color: #1c1c1c;
+        align-items: center;
+    }
+
+    #poesias .botao {
+
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 3px 6px;
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+
+
+ 
+
+   
+
+
+
+
+
